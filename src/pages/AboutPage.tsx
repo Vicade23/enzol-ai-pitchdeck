@@ -120,7 +120,7 @@ export default function AboutPage() {
                   <div className="text-sm text-muted-foreground">Research Papers Analyzed</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-secondary mb-2">7K+</div>
+                  <div className="text-3xl font-bold text-secondary mb-2">12K+</div>
                   <div className="text-sm text-muted-foreground">Active Users</div>
                 </div>
                 <div className="text-center">
