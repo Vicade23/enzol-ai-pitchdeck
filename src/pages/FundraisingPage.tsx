@@ -222,7 +222,7 @@ export default function FundraisingPage() {
           </p>
           <Link to={companyEmail}>
             <Button size="lg" className="bg-primary hover:bg-primary/90">
-                Contact Investment Team
+                Contact Team
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
           </Link>
