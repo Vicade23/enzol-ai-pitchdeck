@@ -70,7 +70,7 @@ export default function FundraisingPage() {
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-sm font-medium text-muted-foreground">Total Raised</p>
-                <p className="text-2xl font-bold text-glow">$15.5k</p>
+                <p className="text-2xl font-bold text-glow">$16.5k</p>
               </div>
               <DollarSign className="h-8 w-8 text-primary" />
             </div>
