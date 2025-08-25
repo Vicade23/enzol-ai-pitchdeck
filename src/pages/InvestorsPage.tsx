@@ -48,10 +48,12 @@ export default function InvestorsPage() {
               Enzol is at the forefront of democratizing artificial intelligence for education and scientific discovery.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-primary hover:bg-primary/90">
-                Download Pitch Deck
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
+              <Link to={'https://1drv.ms/p/c/3a6edfaff77a327f/EZfBrvNbi5BAvog48GPjliMBK4y3urkDed_KIdKZcXrLsQ?e=s7nnZg'} target='_blank'>
+                <Button size="lg" className="bg-primary hover:bg-primary/90">
+                  Download Pitch Deck
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </Link>
               {/* <Button variant="outline" size="lg" className="border-primary/20 hover:bg-primary/5">
                 Schedule Call
               </Button> */}
