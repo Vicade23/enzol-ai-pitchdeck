@@ -11,34 +11,44 @@ export default function FundraisingPage() {
   const fundingRounds = [
     {
       round: "Series A",
-      target: "$150K",
-      raised: "$11.5K",
-      progress: 7.6,
+      target: "$70K",
+      raised: "$11.2K",
+      progress: 16,
       status: "Active",
-      deadline: "Q3 2025",
+      deadline: "Q4 2025",
       investors: 5
     },
     {
       round: "Seed Round",
-      target: "$5K",
-      raised: "$5K",
+      target: "$8K",
+      raised: "$8K",
       progress: 100,
       status: "Completed",
       deadline: "Q2 2024",
       investors: 2
-    }
+    },
+    {
+      round: "Pre-Seed Round",
+      target: "$2K",
+      raised: "$2K",
+      progress: 100,
+      status: "Completed",
+      deadline: "Q2 2024",
+      investors: 1
+    },
   ];
 
   const useOfFunds = [
-    { category: "R&D & Product Development", percentage: 40, amount: "$60K" },
-    { category: "Sales & Marketing", percentage: 25, amount: "$37.5K" },
-    { category: "Team Expansion", percentage: 20, amount: "$30K" },
-    { category: "Operations & Infrastructure", percentage: 15, amount: "$22.5K" }
+    { category: "R&D & Product Development", percentage: 40, amount: "$28K" },
+    { category: "Sales & Marketing", percentage: 25, amount: "$17.5K" },
+    { category: "Team Expansion", percentage: 20, amount: "$14K" },
+    { category: "Operations & Infrastructure", percentage: 15, amount: "$10.5K" }
   ];
 
   const milestones = [
     { title: "Product Beta Launch (MVP)", status: "Completed", date: "Q4 2024" },
     { title: "First 1000 Users", status: "Completed", date: "Q4 2024" },
+    { title: "First 10,000 Users", status: "Completed", date: "Q1 2025" },
     { title: "Series A Close", status: "In Progress", date: "Q3 2025" },
     { title: "Product Launch", status: "Planned", date: "Q4 2025" },
     { title: "International Expansion", status: "Planned", date: "Q4 2025" },
@@ -70,7 +80,7 @@ export default function FundraisingPage() {
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-sm font-medium text-muted-foreground">Total Raised</p>
-                <p className="text-2xl font-bold text-glow">$16.5k</p>
+                <p className="text-2xl font-bold text-glow">$21.2k</p>
               </div>
               <DollarSign className="h-8 w-8 text-primary" />
             </div>
@@ -82,7 +92,7 @@ export default function FundraisingPage() {
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-sm font-medium text-muted-foreground">Active Investors</p>
-                <p className="text-2xl font-bold text-glow">7</p>
+                <p className="text-2xl font-bold text-glow">8</p>
               </div>
               <Users className="h-8 w-8 text-primary" />
             </div>

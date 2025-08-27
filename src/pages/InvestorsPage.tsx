@@ -15,8 +15,8 @@ export default function InvestorsPage() {
   ];
 
   const milestones = [
-    { year: "Q3/25", title: "Series A Funding", amount: "$150K", description: "Led by top-tier VCs to scale AI research capabilities" },
-    { year: "2025", title: "MVP Paused", amount: "", description: "Hign maintainance cost" },
+    { year: "Q3/25", title: "Series A Funding", amount: "$75K", description: "Led by top-tier VCs to scale AI research capabilities" },
+    { year: "2025", title: "MVP Paused", amount: "", description: "Product demand value and validity acquired from users" },
     { year: "Q4/24", title: "MVP Launch", amount: "12K+ Users", description: "Successfully launched AI platform prototype with rapid user adoption" },
     { year: "Q2/24", title: "Seed Round", amount: "$5K", description: "Initial funding to build core AI technology and team" },
     { year: "2024", title: "Company Founded", amount: "Team of 5", description: "Started with a vision to democratize AI for research and education" }
@@ -133,7 +133,7 @@ export default function InvestorsPage() {
                       <span className="text-primary font-bold text-sm">{milestone.year}</span>
                     </div>
                   </div>
-                  <Card className="flex-1 glass-card border-border/50">
+                  <Card className="flex-1 glass-card border-border/50 w-full">
                     <CardHeader>
                       <div className="flex justify-between items-start">
                         <div>
