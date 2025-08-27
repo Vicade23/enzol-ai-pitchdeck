@@ -3,6 +3,10 @@ import { Button } from "../components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../components/ui/card";
 import { Badge } from "../components/ui/badge";
 import { useState } from "react";
+import Logo from "../assets/enzol-logo.png"
+import Google_developer from "../assets/GDG_logo-removebg-preview.png"
+import Microsoft_learn from "../assets/students-ambassador-logo.png"
+import Revo_System from "../assets/revo-logo.png"
 import { Link } from "react-router-dom";
 
 export default function PartnershipPage() {
@@ -55,12 +59,12 @@ export default function PartnershipPage() {
   ];
 
   const currentPartners = [
-    { name: "Stanford University", type: "Academic", logo: "🎓", description: "AI research collaboration" },
-    { name: "Microsoft Azure", type: "Technology", logo: "☁️", description: "Cloud infrastructure partnership" },
-    { name: "Google Cloud", type: "Technology", logo: "🔗", description: "AI/ML platform integration" },
-    { name: "IBM Research", type: "Technology", logo: "🔬", description: "Advanced AI research" },
-    { name: "MIT", type: "Academic", logo: "🏫", description: "Student program partnership" },
-    { name: "AWS", type: "Technology", logo: "⚡", description: "Scalable cloud solutions" }
+    { name: "Google Developer Group", type: "Group", logo: Google_developer, description: "AI research collaboration" },
+    { name: "Microsoft Learn", type: "Organization", logo: Microsoft_learn, description: "Student program partnership" },
+    { name: "Revo System", type: "Technology", logo: Revo_System, description: "AI/ML platform integration" },
+    // { name: "IBM Research", type: "Technology", logo: "🔬", description: "Advanced AI research" },
+    // { name: "MIT", type: "Academic", logo: "🏫", description: "Student program partnership" },
+    // { name: "AWS", type: "Technology", logo: "⚡", description: "Scalable cloud solutions" }
   ];
 
   const partnershipBenefits = [
@@ -165,7 +169,7 @@ export default function PartnershipPage() {
       </section>
 
       {/* Current Partners */}
-      {/* <section className="py-16 bg-muted/30">
+      <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Our Current Partners</h2>
@@ -177,7 +181,7 @@ export default function PartnershipPage() {
             {currentPartners.map((partner, index) => (
               <Card key={index} className="glass-card border-border/50 text-center">
                 <CardContent className="p-6">
-                  <div className="text-4xl mb-4">{partner.logo}</div>
+                  <div className="text-4xl mb-4 d-flex justify-center">{<img className="mx-auto " src={partner.logo} width={70} height={70} alt="Logo"/>}</div>
                   <h3 className="font-semibold text-lg mb-2">{partner.name}</h3>
                   <Badge variant="secondary" className="mb-3 bg-primary/10 text-primary">
                     {partner.type}
@@ -188,7 +192,7 @@ export default function PartnershipPage() {
             ))}
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* Partnership Benefits */}
       <section className="py-16">
