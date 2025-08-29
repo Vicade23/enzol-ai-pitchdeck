@@ -11,7 +11,7 @@ export default function FundraisingPage() {
   const fundingRounds = [
     {
       round: "Series A",
-      target: "$70K",
+      target: "$75K",
       raised: "$11.2K",
       progress: 16,
       status: "Active",
