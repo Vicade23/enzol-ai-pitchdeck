@@ -5,7 +5,7 @@ import Logo from "../assets/enzol-logo.png"
 import Emmanuel from "../assets/Emmanuel.jpg"
 import Dee from "../assets/Dee.jpg"
 import Tobi from "../assets/Tobi.png"
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const values = [
   {
@@ -58,6 +58,16 @@ const team = [
 ];
 
 export default function AboutPage() {
+  
+    useEffect(() => {
+      document.documentElement.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "instant"
+      })
+    }, [])
+
+
   const [companyEmail] = useState('mailto:revoinnovationsystems@gmail.com')
   return (
     <div className="min-h-screen">

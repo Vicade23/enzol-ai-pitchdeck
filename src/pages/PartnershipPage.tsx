@@ -2,7 +2,7 @@ import { ArrowRight, Handshake, Building2, GraduationCap, Briefcase, Globe, User
 import { Button } from "../components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../components/ui/card";
 import { Badge } from "../components/ui/badge";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Logo from "../assets/enzol-logo.png"
 import Google_developer from "../assets/GDG_logo-removebg-preview.png"
 import Microsoft_learn from "../assets/students-ambassador-logo.png"
@@ -10,6 +10,16 @@ import Revo_System from "../assets/revo-logo.png"
 import { Link } from "react-router-dom";
 
 export default function PartnershipPage() {
+  
+    useEffect(() => {
+      document.documentElement.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "instant"
+      })
+    }, [])
+
+
   const [companyEmail] = useState('mailto:revoinnovationsystems@gmail.com')
   const partnershipTypes = [
     {

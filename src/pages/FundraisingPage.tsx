@@ -4,33 +4,43 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../co
 import { Badge } from "../components/ui/badge";
 import { Progress } from "../components/ui/progress";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function FundraisingPage() {
+  
+    useEffect(() => {
+      document.documentElement.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "instant"
+      })
+    }, [])
+
+
   const [companyEmail] = useState('mailto:revoinnovationsystems@gmail.com')
   const fundingRounds = [
     {
       round: "Series A",
-      target: "$75K",
-      raised: "$11.2K",
-      progress: 16,
+      target: "$230K",
+      raised: "$14K",
+      progress: 6,
       status: "Active",
       deadline: "Q4 2025",
-      investors: 5
+      investors: 3
     },
     {
       round: "Seed Round",
-      target: "$8K",
-      raised: "$8K",
+      target: "$15K",
+      raised: "$15K",
       progress: 100,
       status: "Completed",
-      deadline: "Q2 2024",
-      investors: 2
+      deadline: "Q3 2024",
+      investors: 1
     },
     {
       round: "Pre-Seed Round",
-      target: "$2K",
-      raised: "$2K",
+      target: "$1.5K",
+      raised: "$1.5K",
       progress: 100,
       status: "Completed",
       deadline: "Q2 2024",
@@ -39,10 +49,10 @@ export default function FundraisingPage() {
   ];
 
   const useOfFunds = [
-    { category: "R&D & Product Development", percentage: 40, amount: "$28K" },
-    { category: "Sales & Marketing", percentage: 25, amount: "$17.5K" },
-    { category: "Team Expansion", percentage: 20, amount: "$14K" },
-    { category: "Operations & Infrastructure", percentage: 15, amount: "$10.5K" }
+    { category: "R&D & Product Development", percentage: 40, amount: "$92K" },
+    { category: "Sales & Marketing", percentage: 25, amount: "$57.5K" },
+    { category: "Team Expansion", percentage: 20, amount: "$46K" },
+    { category: "Operations & Infrastructure", percentage: 15, amount: "$34.5K" }
   ];
 
   const milestones = [
@@ -80,7 +90,7 @@ export default function FundraisingPage() {
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-sm font-medium text-muted-foreground">Total Raised</p>
-                <p className="text-2xl font-bold text-glow">$21.2k</p>
+                <p className="text-2xl font-bold text-glow">$30.5k</p>
               </div>
               <DollarSign className="h-8 w-8 text-primary" />
             </div>
@@ -92,7 +102,7 @@ export default function FundraisingPage() {
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-sm font-medium text-muted-foreground">Active Investors</p>
-                <p className="text-2xl font-bold text-glow">8</p>
+                <p className="text-2xl font-bold text-glow">4</p>
               </div>
               <Users className="h-8 w-8 text-primary" />
             </div>
@@ -155,7 +165,7 @@ export default function FundraisingPage() {
                   </div>
                   <Progress value={round.progress} className="h-2" />
                   <p className="text-xs text-muted-foreground">
-                    {round.investors} investors committed
+                    {round.investors > 1 ? <span>{round.investors} investors committed</span> : <span>{round.investors} investor committed</span> }
                   </p>
                 </div>
               </div>

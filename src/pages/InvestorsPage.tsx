@@ -2,10 +2,18 @@ import { ArrowRight, TrendingUp, Users, Globe, Award, Target } from "lucide-reac
 import { Button } from "../components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../components/ui/card";
 import { Badge } from "../components/ui/badge";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function InvestorsPage() {
+  useEffect(() => {
+    document.documentElement.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "instant"
+    })
+  }, [])
+
   const [companyEmail] = useState('mailto:revoinnovationsystems@gmail.com')
   const metrics = [
     { label: "Revenue Growth", value: "130%", period: "YoY", icon: TrendingUp },
@@ -15,10 +23,10 @@ export default function InvestorsPage() {
   ];
 
   const milestones = [
-    { year: "Q3/25", title: "Series A Funding", amount: "$75K", description: "Led by top-tier VCs to scale AI research capabilities" },
+    { year: "Q3/25", title: "Series A Funding", amount: "$230K", description: "Led by top-tier VCs to scale AI research capabilities" },
     { year: "2025", title: "MVP Paused", amount: "", description: "Product demand value and validity acquired from users" },
     { year: "Q4/24", title: "MVP Launch", amount: "12K+ Users", description: "Successfully launched AI platform prototype with rapid user adoption" },
-    { year: "Q2/24", title: "Seed Round", amount: "$5K", description: "Initial funding to build core AI technology and team" },
+    { year: "Q3/24", title: "Seed Round", amount: "$15K", description: "Initial funding to build prototype AI technology and team" },
     { year: "2024", title: "Company Founded", amount: "Team of 5", description: "Started with a vision to democratize AI for research and education" }
   ];
 
