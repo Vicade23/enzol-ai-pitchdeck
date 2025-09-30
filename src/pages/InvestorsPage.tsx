@@ -23,10 +23,12 @@ export default function InvestorsPage() {
   ];
 
   const milestones = [
-    { year: "Q3/25", title: "Series A Funding", amount: "$230K", description: "Led by top-tier VCs to scale AI research capabilities" },
+    { year: "Q3/25", title: "Seed Round", amount: "$15K", description: "Product and team development" },
+    // { year: "Q3/25", title: "Series A Funding", amount: "$230K", description: "Led by top-tier VCs to scale AI research capabilities" },
     { year: "2025", title: "MVP Paused", amount: "", description: "Product demand value and validity acquired from users" },
     { year: "Q4/24", title: "MVP Launch", amount: "12K+ Users", description: "Successfully launched AI platform prototype with rapid user adoption" },
-    { year: "Q3/24", title: "Seed Round", amount: "$15K", description: "Initial funding to build prototype AI technology and team" },
+    { year: "Q3/24", title: "Pre-Seed Round", amount: "$2K", description: "Initial funding to build prototype AI technology and team" },
+    // { year: "Q3/24", title: "Seed Round", amount: "$15K", description: "Initial funding to build prototype AI technology and team" },
     { year: "2024", title: "Company Founded", amount: "Team of 5", description: "Started with a vision to democratize AI for research and education" }
   ];
 
@@ -57,7 +59,7 @@ export default function InvestorsPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               {/* https://1drv.ms/p/c/3a6edfaff77a327f/EZfBrvNbi5BAvog48GPjliMBK4y3urkDed_KIdKZcXrLsQ?e=s7nnZg */}
-              <Link to={'/view-pitch-deck'}>
+              <Link to={'https://1drv.ms/p/c/3a6edfaff77a327f/EZfBrvNbi5BAvog48GPjliMBK4y3urkDed_KIdKZcXrLsQ?e=s7nnZg'} target="_blank">
                 <Button size="lg" className="bg-primary hover:bg-primary/90">
                   View Pitch Deck
                   <ArrowRight className="ml-2 h-5 w-5" />

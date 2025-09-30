@@ -20,46 +20,37 @@ export default function FundraisingPage() {
   const [companyEmail] = useState('mailto:revoinnovationsystems@gmail.com')
   const fundingRounds = [
     {
-      round: "Series A",
-      target: "$230K",
-      raised: "$14K",
-      progress: 6,
-      status: "Active",
-      deadline: "Q4 2025",
-      investors: 3
-    },
-    {
       round: "Seed Round",
       target: "$15K",
-      raised: "$15K",
+      raised: "$11.5K",
+      progress: 76.7,
+      status: "Active",
+      deadline: "Q4 2025",
+      investors: 4
+    },
+    {
+      round: "Pre-Seed Round",
+      target: "$2K",
+      raised: "$2K",
       progress: 100,
       status: "Completed",
       deadline: "Q3 2024",
       investors: 1
     },
-    {
-      round: "Pre-Seed Round",
-      target: "$1.5K",
-      raised: "$1.5K",
-      progress: 100,
-      status: "Completed",
-      deadline: "Q2 2024",
-      investors: 1
-    },
   ];
 
   const useOfFunds = [
-    { category: "R&D & Product Development", percentage: 40, amount: "$92K" },
-    { category: "Sales & Marketing", percentage: 25, amount: "$57.5K" },
-    { category: "Team Expansion", percentage: 20, amount: "$46K" },
-    { category: "Operations & Infrastructure", percentage: 15, amount: "$34.5K" }
+    { category: "R&D & Product Development", percentage: 40, amount: "$6K" },
+    { category: "Sales & Marketing", percentage: 25, amount: "$3.75K" },
+    { category: "Team Expansion", percentage: 20, amount: "$3K" },
+    { category: "Operations & Infrastructure", percentage: 15, amount: "$2.25K" }
   ];
 
   const milestones = [
     { title: "Product Beta Launch (MVP)", status: "Completed", date: "Q4 2024" },
     { title: "First 1000 Users", status: "Completed", date: "Q4 2024" },
     { title: "First 10,000 Users", status: "Completed", date: "Q1 2025" },
-    { title: "Series A Close", status: "In Progress", date: "Q3 2025" },
+    { title: "Seed Round Close", status: "In Progress", date: "Q3 2025" },
     { title: "Product Launch", status: "Planned", date: "Q4 2025" },
     { title: "International Expansion", status: "Planned", date: "Q4 2025" },
     { title: "Enterprise Partnerships", status: "Planned", date: "2026" },
@@ -75,7 +66,7 @@ export default function FundraisingPage() {
             Track our funding progress and investor relations
           </p>
         </div>
-          <Link to={'/view-pitch-deck'} target='_blank'>
+          <Link to={'https://1drv.ms/p/c/3a6edfaff77a327f/EZfBrvNbi5BAvog48GPjliMBK4y3urkDed_KIdKZcXrLsQ?e=s7nnZg'} target='_blank'>
             <Button className="bg-primary hover:bg-primary/90 w-full lg:w-auto">
               <TrendingUp className="mr-2 h-4 w-4" />
               View Pitch Deck
@@ -90,7 +81,7 @@ export default function FundraisingPage() {
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-sm font-medium text-muted-foreground">Total Raised</p>
-                <p className="text-2xl font-bold text-glow">$30.5k</p>
+                <p className="text-2xl font-bold text-glow">$13.5k</p>
               </div>
               <DollarSign className="h-8 w-8 text-primary" />
             </div>
@@ -102,7 +93,7 @@ export default function FundraisingPage() {
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-sm font-medium text-muted-foreground">Active Investors</p>
-                <p className="text-2xl font-bold text-glow">4</p>
+                <p className="text-2xl font-bold text-glow">5</p>
               </div>
               <Users className="h-8 w-8 text-primary" />
             </div>
@@ -114,7 +105,7 @@ export default function FundraisingPage() {
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-sm font-medium text-muted-foreground">Valuation</p>
-                <p className="text-2xl font-bold text-glow">$2M</p>
+                <p className="text-2xl font-bold text-glow">$50k</p>
               </div>
               <Award className="h-8 w-8 text-primary" />
             </div>
@@ -126,7 +117,7 @@ export default function FundraisingPage() {
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-sm font-medium text-muted-foreground">Next Round</p>
-                <p className="text-2xl font-bold text-glow">Series B</p>
+                <p className="text-2xl font-bold text-glow">Series A</p>
               </div>
               <Target className="h-8 w-8 text-primary" />
             </div>

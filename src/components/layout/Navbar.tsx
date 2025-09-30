@@ -114,7 +114,7 @@ export function Navbar() {
                 Sign In
               </Button>
             </Link> */}
-            <Link to={'/contact-investment-team'}>
+            <Link to={companyEmail}>
               <Button variant="primary" className="glow-primary">
                 Contact Team
               </Button>
