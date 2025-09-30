@@ -75,7 +75,7 @@ export default function FundraisingPage() {
             Track our funding progress and investor relations
           </p>
         </div>
-          <Link to={'https://1drv.ms/p/c/3a6edfaff77a327f/EZfBrvNbi5BAvog48GPjliMBK4y3urkDed_KIdKZcXrLsQ?e=s7nnZg'} target='_blank'>
+          <Link to={'/view-pitch-deck'} target='_blank'>
             <Button className="bg-primary hover:bg-primary/90 w-full lg:w-auto">
               <TrendingUp className="mr-2 h-4 w-4" />
               View Pitch Deck
@@ -242,7 +242,7 @@ export default function FundraisingPage() {
           <p className="text-muted-foreground mb-6">
             Join our journey to revolutionize AI education and research
           </p>
-          <Link to={companyEmail}>
+          <Link to={'/contact-investment-team'}>
             <Button size="lg" className="bg-primary hover:bg-primary/90">
                 Contact Team
               <ArrowRight className="ml-2 h-4 w-4" />

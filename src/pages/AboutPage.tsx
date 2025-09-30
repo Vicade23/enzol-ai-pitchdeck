@@ -228,7 +228,7 @@ export default function AboutPage() {
                   Interested in Investing?
                 </Button>
               </Link>
-              <Link to={companyEmail}>
+              <Link to={'/contact-investment-team'}>
                 <Button variant="outline" size="lg">
                   Contact Us
                 </Button>

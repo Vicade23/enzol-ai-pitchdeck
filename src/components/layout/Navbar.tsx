@@ -114,7 +114,7 @@ export function Navbar() {
                 Sign In
               </Button>
             </Link> */}
-            <Link to={companyEmail}>
+            <Link to={'/contact-investment-team'}>
               <Button variant="primary" className="glow-primary">
                 Contact Team
               </Button>
@@ -188,7 +188,7 @@ export function Navbar() {
                     Sign In
                   </Button>
                 </Link> */}
-                <Link to={companyEmail} onClick={() => setMobileMenuOpen(false)}>
+                <Link to={'/contact-investment-team'} onClick={() => setMobileMenuOpen(false)}>
                   <Button variant="primary" className="w-full glow-primary">
                     Contact Team
                   </Button>

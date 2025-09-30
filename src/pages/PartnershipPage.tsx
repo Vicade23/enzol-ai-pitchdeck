@@ -123,13 +123,13 @@ export default function PartnershipPage() {
               innovative solutions that transform how the world learns and discovers.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to={companyEmail}>
+              <Link to={'/apply-partnership'}>
                 <Button size="lg" className="bg-primary hover:bg-primary/90">
                   Become a Partner
                   <Handshake className="ml-2 h-5 w-5" />
                 </Button>
               </Link>
-              <Link to={companyEmail}>
+              <Link to={'/partnership-guide'}>
                 <Button variant="outline" size="lg" className="border-primary/20 hover:bg-primary/5">
                   Partnership Guide
                 </Button>
@@ -263,7 +263,7 @@ export default function PartnershipPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             
-            <Link to={companyEmail}>
+            <Link to={'/apply-partnership'}>
               <Button size="lg" className="bg-primary hover:bg-primary/90">
                 Apply for Partnership
                 <ArrowRight className="ml-2 h-5 w-5" />
